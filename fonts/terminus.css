@@ -1,0 +1,40 @@
+/* 
+@name         Terminus
+@description  Provides the Terminus TTF Font.
+@namespace    compaqdisc.com/spacehey
+@author       Bradan J. Wolbeck
+@version      1.0.0
+*/
+
+/* Terminus Medium */
+@font-face {
+    font-family: 'Terminus';
+    src: url('https://www.compaqdisc.com/fonts/TerminusTTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Terminus Bold */
+@font-face {
+    font-family: 'Terminus';
+    src: url('https://www.compaqdisc.com/fonts/TerminusTTF-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Terminus Medium Italic */
+@font-face {
+    font-family: 'Terminus';
+    src: url('https://www.compaqdisc.com/fonts/TerminusTTF-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Terminus Bold Italic */
+@font-face {
+    font-family: 'Terminus';
+    src: url('https://www.compaqdisc.com/fonts/TerminusTTF-Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

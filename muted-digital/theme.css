@@ -1,0 +1,178 @@
+/* 
+@name         Muted Digital
+@description  Blue/Gray theme for SpaceHey.
+@namespace    compaqdisc.com/spacehey
+@author       Bradan J. Wolbeck
+@version      1.0.0
+*/
+
+/*
+Variables Used:
+--theme-page-background: a url() to use as the page's background image
+  usage: `--theme-page-background: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&fm=png&fit=crop&w=1920&fit=max")`
+--theme-page-font-family: a font-family declaration to use for the page text
+  usage: `--theme-page-font-family: "Times New Roman", Times, serif`
+*/
+
+/* Define theme colors */
+:root {
+  --theme-foreground: #ffffff;
+  --theme-foreground-alt: #000000;
+  --theme-background: rgba(34, 34, 34, 0.75);
+  --theme-background-alt: rgba(17, 17, 17, 0.75);
+  /* Header/footer and secondary */
+  --theme-blue-one: #1c5d99;
+  --theme-blue-two: #2780d3;
+
+  /* Link/box heading and hover */
+  --theme-blue-three: #007bff;
+  --theme-blue-four: #3797ff;
+
+  /* old colors */
+  /*
+  --lighter-blue: #1c5d99;
+  --gray: #111;
+  --light-orange: #1c5d99;
+  --dark-orange: #fff;
+  --compaq-gray-alpha: rgba(34,34,34,0.75);
+  */
+
+  /* fallbacks */
+  --theme-page-background-fallback: url("https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&fm=png&fit=crop&w=1920&fit=max");
+  --theme-page-font-family-fallback: "Arial", sans-serif;
+}
+
+body {
+  background: var(--theme-page-background, var(--theme-page-background-fallback)) no-repeat center center fixed;
+  background-size: cover;
+  font-family: var(--theme-page-font-family, var(--theme-page-font-family-fallback));
+  font-size: 1.2em;
+}
+
+p,
+ol li {
+  font-size: 1.2em;
+}
+
+.container {
+  width: 1200px;
+}
+
+main,
+footer {
+  background: var(--theme-background-alt);
+  color: var(--theme-foreground);
+}
+
+main a {
+  color: var(--theme-blue-three);
+}
+
+main a:hover {
+  color: var(--theme-blue-four);
+}
+
+.profile-pic img {
+  border-radius: 8px;
+}
+
+.profile .blurbs .heading,
+.profile .friends .heading {
+  background: var(--theme-blue-three);
+  color: var(--theme-foreground);
+}
+
+.profile .contact .heading,
+.profile .table-section .heading,
+.home-actions .heading {
+  background: var(--theme-blue-three);
+  color: var(--theme-foreground);
+}
+
+.profile .contact,
+.profile .url-info,
+.profile .table-section,
+.home-actions {
+  border: none;
+}
+
+.profile .blurbs .section h4 {
+  color: var(--theme-foreground);
+  font-weight: bolder;
+}
+
+.contact .icon,
+.links img {
+  display: none; 
+}
+
+.count {
+  color: var(--theme-blue-three);
+}
+
+table {
+  border: none;
+}
+
+.details-table td:first-child {
+  background: 0 0;
+  color: var(--theme-blue-three);
+  text-align: right;
+}
+
+.details-table td:nth-child(2) {
+  background: 0 0;
+  color: var(--theme-foreground);
+}
+
+.comments-table td:first-child,
+.music-table td:first-child {
+  background: 0 0;
+}
+
+.comments-table td,
+.music-table td {
+  border: none;
+  padding: 6px 16px;
+  background: 0 0;
+}
+
+.comments-table td:first-child {
+  width: 25%;
+  padding: 0px 0px;
+}
+
+.comments-table button {
+    font-family: var(--theme-page-font-family, var(--theme-page-font-family-fallback));
+    font-size: 16px;
+}
+
+.comments-table td button {
+  background-color: var(--theme-blue-two);
+  border: none;
+  color: white;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 3px;
+  cursor: pointer;
+}
+
+/* Delete comment button */
+.comments-table td:nth-child(2) a:nth-child(3) button {
+  background-color: red;
+}
+
+.comments-table td:nth-child(2) a {
+  display: inline-block;
+}
+
+/*#1874cd*/
+
+/*
+.profile-pic img {
+  border: 4px solid;
+  border-color: #5b5b5b #dbdbdb #dbdbdb #5b5b5b;
+}
+*/
