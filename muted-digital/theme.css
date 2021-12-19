@@ -3,7 +3,7 @@
 @description  Blue/Gray theme for SpaceHey.
 @namespace    compaqdisc.com/spacehey
 @author       Bradan J. Wolbeck
-@version      1.0.0
+@version      1.0.2
 */
 
 /*
@@ -56,6 +56,10 @@ ol li {
 
 .container {
   width: 900px;
+}
+
+nav .links {
+  background: var(--theme-blue-three);
 }
 
 main,
