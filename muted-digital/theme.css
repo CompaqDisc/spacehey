@@ -51,11 +51,11 @@ body {
 
 p,
 ol li {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .container {
-  width: 1200px;
+  width: 900px;
 }
 
 main,
